@@ -6,4 +6,6 @@ ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) +
   geom_point()
 
 ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) + 
+  geom_line() +
   geom_point(aes(color = continent))
+  
