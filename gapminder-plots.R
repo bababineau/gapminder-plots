@@ -1,5 +1,6 @@
 gapminder <- read.csv("/Users/brookebabineau/Desktop/gapminder/data/gapminder-FiveYearData.csv")
-getwd()
 
-getwd()
-setwd()
+library(ggplot2)
+
+ggplot(gapminder, aes(x = gdpPercap, y = lifeExp)) + 
+  geom_point()
